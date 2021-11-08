@@ -1,0 +1,2 @@
+# AVL-Tree
+This is my implementation of an AVL balanced binary search tree that I worked on during my sophomore year as part of my **Algorithms & Data Structures** course at Lebanon Valley College. The height of a node as I defined it is the longest path from the current node to a leaf under it. The tree is considered *unbalanced* if the height of the left or right node in a subtree if different by more than 1.
