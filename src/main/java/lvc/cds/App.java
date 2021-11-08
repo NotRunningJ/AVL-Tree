@@ -19,7 +19,7 @@ public final class App {
     /**
      * adds a specified number of elements to a tree
      */
-    public static void testRandomAdds(AVLMap<Integer, Integer> map, int num) {
+    public static void testRandomAdds(AVLTree<Integer, Integer> map, int num) {
         for (int i = 0; i < num; i++) {
             int rand = r.nextInt();
             map.put(rand, rand);
@@ -35,7 +35,7 @@ public final class App {
         double CONVERT = 1_000_000.0;
         for (int m = 100; m <=1_000_000; m*=10) {
             for (int i = 0; i < 10; i++) {
-                AVLMap<Integer, Integer> avlm = new AVLMap<>();
+                AVLTree<Integer, Integer> avlm = new AVLTree<>();
                 var start = System.nanoTime();
                 testRandomAdds(avlm, m);
                 var elapsed = System.nanoTime() - start;

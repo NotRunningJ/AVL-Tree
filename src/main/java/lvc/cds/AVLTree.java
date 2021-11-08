@@ -2,17 +2,17 @@ package lvc.cds;
 
 import java.util.Comparator;
 
-public class AVLMap<K extends Comparable<K>, V> implements Map<K, V> {
+public class AVLTree<K extends Comparable<K>, V> implements Map<K, V> {
 
     private Node root;
     private Comparator<K> comp;
     private int size;
 
-    public AVLMap() {
+    public AVLTree() {
         this(Comparator.<K>naturalOrder());
     }
 
-    public AVLMap(Comparator<K> c) {
+    public AVLTree(Comparator<K> c) {
         clear();
         comp = c;
     }
